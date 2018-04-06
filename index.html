@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ego News</title>
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body onload="loadData()">
+    <header class="headerBg">
+        <div class="jumbotrin text-center py-5">
+            <h1 class="display-3 ego"><img src="img/menu-burger.png" alt="" class="img-fluid logoImg"> <span class="">EGO</span><small>news</small></h1>
+            <br>
+            <small class="descText">News update aggregator from Nigeria and all around the world</small>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/ego news.png" class="brand-logo img-fluid" alt="" onclick="openNav()"></a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="generalNews">GENERAL NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="business">BUSINESS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="entertainment">ENTERTAINMENT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="health">HEALTH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="science">SCIENCE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="sports">SPORTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" id="technology">TECHNOLOGY</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- SideNav -->
+    <div id="egoSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+    </div>
+    <div id="main">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-12 mb-2">
+                    <h3 class="bg-headlines page-header pl-3 py-2" id="titleText">News Headlines</h3>
+               </div>
+           </div>
+           <div class="row" id="headlines">
+               
+           </div>
+       </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
